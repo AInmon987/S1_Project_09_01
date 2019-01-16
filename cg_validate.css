@@ -13,12 +13,14 @@
 
 
 /* Validation Styles */
+/* For every input, select,textarea that is focused will get a background color of light green. */
 input:focus,
 select:focus,
 textarea:focus {
     background-color: rgb(220, 255, 220);
 }
 
+/* for every id of fnBox,lnBox, mailBox, phoneBox, idBox that is focused and is valid will have a background color of light green.  */
 #fnBox:focus:valid,
 #lnBox:focus:valid,
 #mailBox:focus:valid,
@@ -27,6 +29,7 @@ textarea:focus {
     background: rgb(220, 255, 220) url(cg_valid.png) right/contain no-repeat;
 }
 
+/* for every id of fnBox,lnBox, mailBox, phoneBox, idBox that is focused and is invalid will have a background color of light red. */
 #fnBox:focus:invalid,
 #lnBox:focus:invalid,
 #mailBox:focus:invalid,

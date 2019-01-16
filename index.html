@@ -14,7 +14,7 @@
       Filename:  index.html
 
    -->
-
+    <!-- Added the link for the validate css file, the forms css file and added the script for the javascript file. These links call in the other files and applies the style to the web pages. -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>CGIP Registration Form</title>
@@ -55,10 +55,12 @@
     <section>
         <h1>Conference Registration Form</h1>
         <p>Required Item (*)</p>
+        <!-- Added the form for the web page. The form is the basic structure to be able to get field boxes. The information that is inside of the form is the content that users fill out. The form has an action of "http://www.example.com/cg/register" and has a method of POST  -->
         <form action="http://www.example.com/cg/register" method="POST">
-
+            <!-- The label is for the title and the content that will show up is Title. The input box has an name of title, an id of titleBox, the type is text and the list is titleList. The input tells the field how to work and makes sure that the options will be in a list. -->
             <label for="title">Title</label>
             <input name="title" id="titleBox" type="text" list="titleList" />
+            <!-- The datalist has an id of titleList and the data list makes sure that the options will appear in a dropdown menu to choose from. -->
             <datalist id="titleList">
                 <option value="Mr."></option>
                 <option value="Mrs."></option>
@@ -68,28 +70,28 @@
                 <option value="Assist. Prof."></option>
                 <option value="Assoc. Prof."></option>
             </datalist>
-
+            <!-- The label is for the First Name* content that appears on the page. The input box is saying that the name is firstName, the id is fdBox. The type is text and the last name field is a required demand that must be filled out.  -->
             <label for="firstName">First Name*</label>
             <input name="firstName" id="fnBox" type="text" required />
-
+            <!-- The label is for the Last Name* content that appears on the page. The input box is saying that the name is LastName, the id is inBox. The type is text and the last name field is a required demand that must be filled out.  -->
             <label for="lastName">Last Name*</label>
             <input name="lastName" id="inBox" type="text" required />
-
+            <!-- The label is for the content of address and the textarea element has an name of address, the id is addBox, type is text and the field Address is a required field that must be filled out. -->
             <label for="address">Address*</label>
             <textarea name="address" id="addBox" type="text" required></textarea>
-
+            <!-- The label is for the group and the content that is going to be on the page is Company or university. The input box has the name of group the id is groupBox and the type is text. -->
             <label for="group">Company or University</label>
             <input name="group" id="groupBox" type="text" />
-
+            <!-- The label is fo the email, the input box is making the field have an name of email, the id is mailBox, the type is email and  The field is required to move on in the form.  -->
             <label for="email">E-mail*</label>
             <input name="email" id="mailBox" type="email" required />
-
+            <!-- The regular expresion has a pattern that makes sure that the data that is inserted is the correct form and not a werid format of the original data. The placeholder shows the user how to insert the data.  -->
             <label for="phoneNumber">Phone Number*</label>
             <input name="phoneNumber" id="phoneBox" type="tel" required placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$ " />
-
+            <!-- The regular expresion has a pattern that makes sure that the data that is inserted is the correct form and not a werid format of the original data. The placeholder shows the user how to insert the data. -->
             <label for="acgipID">ACGIP Membership Number</label>
             <input name="acgipID" id="idBox" type="text" placeholder="acgip-nnnnnn" pattern=" ^acgip\-\d{6}$" />
-
+            <!-- The labe is for the Registration category and the id of the label is regList. The select element is for a select list and the options are a dropdwn menu to choose from.  -->
             <label for="Registration category" id="regList"> Registration category</label>
             <select name="registertype" id="regList">
                 <option value="ACGIP Member">ACGIP Member ($695)</option>
@@ -98,7 +100,7 @@
                 <option value="Poster">Poster ($95)</option>
                 <option value="Guest">Guest ($35)</option>
             </select>
-
+            <!-- The input element has the type of button of submit and the text on the button will be Continue. -->
             <p>
                 <input type="submit" value="Continue" />
             </p>
