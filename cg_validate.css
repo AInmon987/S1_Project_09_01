@@ -21,7 +21,6 @@ textarea:focus {
 
 #fnBox:focus:valid,
 #lnBox:focus:valid,
-#addBox:focus:valid,
 #mailBox:focus:valid,
 #phoneBox:focus:valid,
 #idBox:focus:valid {
@@ -30,7 +29,6 @@ textarea:focus {
 
 #fnBox:focus:invalid,
 #lnBox:focus:invalid,
-#addBox:focus:invalid,
 #mailBox:focus:invalid,
 #phoneBox:focus:invalid,
 #idBox:focus:invalid {
